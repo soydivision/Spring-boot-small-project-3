@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 
-import static java.time.Month.*;
+import static java.time.Month.APRIL;
+import static java.time.Month.JANUARY;
 
 @Configuration
 public class StudentConfig {
@@ -22,7 +22,7 @@ public class StudentConfig {
                     );
             Student alex =
                     new Student(
-                            "Alex", "a@mail.com",
+                            "Alex", "alexdarkstalker22@mail.com",
                             LocalDate.of(1998, JANUARY, 18)
                     );
             repository.saveAll(List.of(aru, alex));
